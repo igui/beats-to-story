@@ -42,7 +42,7 @@ on. For example:
 
 ### Invoke the tool
 
-Yo
+You can invoke the tool by using cURL on with the payload specified in the previous step
 
 ```bash
 curl --data @sample_payload.json --header 'Content-Type: application/json' -X POST http://localhost:8000/
