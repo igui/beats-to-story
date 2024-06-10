@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "beat-to-story"
+version = "0.1.0"
+description = ""
+authors = ["Ignacio Avas <gmail@ignacioavas.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.111.0"
+nltk = "^3.8.1"
+openai = "^1.33.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

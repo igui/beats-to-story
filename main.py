@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import nltk
 from openai import OpenAI
-from typing import Iterable, Optional, Annotated
+from typing import Iterable, Optional
 import json
 from nltk.tokenize import word_tokenize
 from contextlib import asynccontextmanager
@@ -12,7 +12,8 @@ from fastapi import Body, FastAPI
 from pydantic import BaseModel, Field
 
 
-OPENAI_KEY = "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"
+# Use your own key
+OPENAI_KEY = "change-me"
 
 # Limits on the generated prose.
 MIN_WORD_BEAT = 100
