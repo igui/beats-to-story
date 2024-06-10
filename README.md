@@ -1,7 +1,8 @@
 ## Beat to Story
 
 A FastAPI application leverages the OpenAI GPT-3.5 model to generate story prose based on 
-user-defined beats, characters, settings, and writing styles.
+user-defined beats, characters, settings, and writing styles. The API is hosted at 
+http://localhost:8000.
 
 ## Requirements
 
@@ -21,7 +22,7 @@ fastapi dev main.py
 ### Create a sample payload
 
 You can use `sample_payload.json` or create a similar file to set the story beats characters and so 
-on.
+on. For example:
 
 ```json
 {
@@ -40,3 +41,10 @@ on.
 ```
 
 ### Invoke the tool
+
+Yo
+
+```bash
+curl --data @sample_payload.json --header 'Content-Type: application/json' -X POST http://localhost:8000/
+```
+
